@@ -74,9 +74,8 @@ p {
 .main .image .overlay .icon {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
   row-gap: 15px;
-
+  margin: 0 auto;
 }
 
 .main .image .overlay .icon i {
