@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* common css style  end here */
+
+
+/* card style here */
+
+.main {
+  background: darkcyan;
+  margin-top: 100px;
+
+}
+
+.main .image img {
+  width: 100%;
+}
+
+.main .text {
+  padding: 30px;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+
+.main .image {
+  position: relative;
+}
+
+.main .image .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(97, 2, 26, 0.5);
+  transition: .6s;
+  transform: scale(0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.main .image .overlay .icon {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  row-gap: 15px;
+
+}
+
+.main .image .overlay .icon i {
+  background-color: rgb(254, 255, 255);
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: black;
+  transition: .6s;
+
+}
+
+.main .image .overlay .icon i:hover {
+  background: transparent;
+  color: black;
+}
+
+.main .image:hover .overlay {
+  transform: scale(1);
+}
